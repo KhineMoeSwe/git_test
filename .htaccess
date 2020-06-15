@@ -1,0 +1,12 @@
+Options +FollowSymlinks
+
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^phyosithu.com [nc] 
+
+RewriteRule ^(.*)$ http://www.phyosithu.com/$1 [L,R=301] 
+
+RewriteRule ^([^/.]+)/$ index.php?pg=$1 [nc]
+
+
+
